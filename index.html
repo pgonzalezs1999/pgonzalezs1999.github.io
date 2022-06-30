@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- http://localhost/Pablo/PortfolioWeb/index.html -->
+        <meta charset="utf-8">
+        <meta property="twitter:card" content="summary">
+        <link rel="icon" href="images/favicon.png">
+        <meta name="author" content="Pablo Gonzalez">
+        <meta name="description" content="Portfolio personal de Pablo González Sánchez">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#F1C40F">
+        <title>Portfolio Pablo González</title>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <header id="header">
+        <div class="headerFlex">
+            <div class="divRostro" onclick="ampliarFoto(1)">
+                <img class="fotoCara" src="./images/fotoCara.jpg" alt="Foto de mí">
+            </div>
+            <div class="headerDiv">
+                <h1 class="pruebb">PABLO GONZÁLEZ SÁNCHEZ</h1>
+                <h2>Estudiante de ingeniería informática</h2>
+            </div>
+        </div>
+        <div id="ampliarFoto" onclick="ampliarFoto(0)">
+            <div class="contenedorAmpliarFoto">
+                <button onclick="ampliarFoto(0)">x</button>
+                <img class="fotoCara" src="./images/fotoCara.jpg" alt="Foto de mí" loading="lazy">
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="ulBanderas">
+            <li><button id="botonDarkMode" onclick="darkMode()"><img src="images/darkmode1.png" alt="Modo nocturno"></button></li>
+            <!-- <li><a href="#"><img src="images/espanol.jpg" alt="Idioma español"></a></li>
+            <li><a href="#"><img src="images/ingles.jpg" alt="Idioma inglés"></a></li> -->
+        </ul>
+        <ul class="ulEnlaces">
+            <li><a class="intercambiador" href="html/seccionAbout.html"><b>SOBRE MÍ</b></a></li>
+            <li><a class="intercambiador" href="html/seccionExperience.html"><b>EXPERIENCIA</b></a></li>
+            <li><a class="intercambiador" href="html/seccionStudies.html"><b>ESTUDIOS</b></a></li>
+            <li><a class="intercambiador" href="html/seccionContact.html"><b>CONTACTO</b></a></li>
+        </ul>
+    </nav>
+    <body>
+        <div class="contenedorSecciones"></div>
+        <button class="circuloSubir" onclick="regresar()">
+            <img src="./images/materialDesign/flechaArriba.png" alt="Flecha Arriba">
+        </button>
+    </body>
+    <footer id="footer">
+        <p><b>Gracias por visitar mi currículum, espero que le esté gustando :)</b></p>
+    </footer>
+    <script src="./js/index.js"></script>
+</html>

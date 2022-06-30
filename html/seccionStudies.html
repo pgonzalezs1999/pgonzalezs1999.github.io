@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- http://localhost/Pablo/PortfolioWeb/index.php -->
+        <meta charset="utf-8">
+        <meta property="twitter:card" content="summary">
+        <meta name="author" content="Pablo Gonzalez">
+        <meta name="description" content="Portfolio personal de Pablo González Sánchez">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio Pablo González</title>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <section class="seccion seccionStudies">
+            <h3>Estudios</h3>
+            <div class="tarjetaArriba tarjetaArribaDoble">
+                <div style="display: flex">
+                    <div class="logoTarjeta logoTitulo">
+                        <img src="./images/logoUEMcolor.png" alt="Logo">
+                    </div>
+                    <div class="tarjetaEstudiosInfo">
+                        <h4>Grado en Ingeniería Informática</h4>
+                        <p><a href="https://universidadeuropea.com/" target="blank">Universidad Europea</a> - Desde 2019 hasta Actualmente</p>
+                        <h5>Habilidades adquiridas:</h5>
+                    </div>
+                </div>
+                <div class="contenedorCompetencias">
+                    <div class="competencia" data-hover="Java">
+                        <img src="./images/competencias/java.png" alt="Logo Java" onclick="verDetalles(1)" href="#">
+                    </div>
+                    <div class="competencia" data-hover="Python" onclick="verDetalles(2)">
+                        <img src="./images/competencias/python.png" alt="Logo Python">
+                    </div>
+                    <div class="competencia competenciaSimple" data-hover="MySQL">
+                        <img src="./images/competencias/mysql.png" alt="Logo MySQL" loading="lazy">
+                    </div>
+                    <div class="competencia" data-hover="Desarrollo web" onclick="verDetalles(3)">
+                        <img src="./images/competencias/html.png" alt="Logo JavaScript">
+                    </div>
+                </div>
+            </div>
+            <div class="tarjetaDetalles infoJava">
+                <h6>Mi experiencia con Java:</h6>
+                <h7 role="heading" aria-level="7">LIFE++</h7>
+                <p>Aplicación de escritorio que gestiona distintos tipos de usuarios a través de una base de datos, y almacena datos de los futuros pacientes gracias a una pulsera con pulsioxímetro y GPS, y permite a los supuestos médicos monitorear dichos datos en tiempo real</p>
+                <div class="container" style="width:100%">
+                    <div id="carouselJava" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselJava" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselJava" data-slide-to="1"></li>
+                            <li data-target="#carouselJava" data-slide-to="2"></li>
+                            <li data-target="#carouselJava" data-slide-to="3"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active" style="border:0px">
+                                <img src="./images/detalles/lifeplusplus1.png" alt="Captura de pantalla Life++">
+                                <p>Pantalla de inicio de sesión</p>
+                            </div>
+                            <div class="item" style="border:0px">
+                                <img src="./images/detalles/lifeplusplus2.png" alt="Captura de pantalla Life++" loading="lazy">
+                                <p>Pantalla de registro</p>
+                            </div>
+                            <div class="item" style="border:0px">
+                                <img src="./images/detalles/lifeplusplus3.png" alt="Captura de pantalla Life++" loading="lazy">
+                                <p>Pantalla principal de un paciente</p>
+                            </div>
+                            <div class="item" style="border:0px">
+                                <img src="./images/detalles/lifeplusplus4.png" alt="Captura de pantalla Life++" loading="lazy">
+                                <p>Pantalla principal de un médico</p>
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#carouselJava" data-slide="prev" style="background:none !important">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carouselJava" data-slide="next" style="background:none !important">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <p><b>Aprendizaje: </b>Interfaz gráfica con JavaFX, conexión Java-MySQL con JDBC</p>
+                <p><b>Duración: </b>9 meses</p>
+                <p><b>Repositorio: </b><a href="https://github.com/pgonzalezs1999/Life-plus-plus-semestre-1" target="blank">Life++</a><br></p>
+                <p>
+                    <b>Desarrollado junto a:</b>
+                    <a href="https://github.com/AlvaroFarreny" target="blank">Álvaro Farreny</a>,
+                    <a href="https://github.com/AlejandroSauco" target="blank">Alejandro Sauco</a>,
+                    <a href="https://github.com/crisdmt" target="blank">Crishina Mendes</a>
+                </p>
+            </div>
+            <div class="tarjetaDetalles infoPython">
+            <h6>Mi experiencia con Python:</h6>
+                <h7 role="heading" aria-level="7">Web scraping y procesamiento de lenguaje natural</h7>
+                <p>Buscador de noticias descargadas con web scraping para ordenarlas por similitud a la búsqueda realizada, mediante diferentes modelos de procesamiento de lenguaje natural</p>
+                <div class="container" style="width:100%">
+                    <div id="carouselPython" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselPython" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselPython" data-slide-to="1"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active" style="border:0px">
+                                <img src="./images/detalles/pythonPLN1.png" alt="Captura de pantalla Python PLN">
+                                <p>Pantalla de comparación entre noticias</p>
+                            </div>
+                            <div class="item" style="border:0px">
+                                <img src="./images/detalles/pythonPLN2.png" alt="Captura de pantalla Python PLN" loading="lazy">
+                                <p>Pantalla de comparación por búsqueda</p>
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#carouselPython" data-slide="prev" style="background:none !important">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carouselPython" data-slide="next" style="background:none !important">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <p><b>Aprendizaje: </b>Interfaz gráfica con Tkinter, Procesamiento de lenguaje natural</p>
+                <p><b>Duración: </b>2 meses</p>
+                <p><b>Repositorio: </b><a href="https://github.com/pgonzalezs1999/SIS_recomendadorNoticias" target="blank">Buscador de noticias PLN</a><br></p>
+            </div>
+            <div class="tarjetaDetalles infoWeb">
+                <h6>Mi experiencia con el desarrollo web:</h6>
+                <h7 role="heading" aria-level="7">Tecnologías y lenguajes:</h7>
+                <div class="contenedorCompetencias">
+                    <div class="competenciaDetalle" data-hover="Java"><img src="./images/competencias/html.png" alt="Logo HTML" loading="lazy"></div>
+                    <div class="competenciaDetalle" data-hover="Python"><img src="./images/competencias/css.png" alt="Logo CSS" loading="lazy"></div>
+                    <div class="competenciaDetalle" data-hover="Desarrollo web"><img src="./images/competencias/javascript.png" alt="Logo JavaScript" loading="lazy"></div>
+                    <div class="competenciaDetalle" data-hover="PHP"><img src="./images/competencias/php.png" alt="Logo PHP" loading="lazy"></div>
+                    <div class="competenciaDetalle" data-hover="MySQL"><img src="./images/competencias/mysql.png" alt="Logo MySQL" loading="lazy"></div>
+                </div>
+                <h7 role="heading" aria-level="7">Portal de crowdfunding</h7>
+                <p>Sitio web desarrollado como trabajo de la universidad que simula un portal donde añadir nuevos proyectos que demandan micromecenazgo, realizar donaciones y escribir comentarios. Los datos se han movido a almacenamiento local para permitir que la web funcione al descargar el repositorio</p>
+                <div class="imgDetalles">
+                    <img src="./images/detalles/crowdfundingLP.png" alt="Captura de pantalla CrowdfundingLP">
+                </div>
+                <p><b>Aprendizaje: </b>Javascript, Base de datos para web</p>
+                <p><b>Duración: </b>1 mes</p>
+                <p><b>Repositorio del proyecto: </b><a href="https://github.com/pgonzalezs1999/Web_de_crowdfunding" target="blank">CrowdfundingLP</a><br></p>
+                <div class="separadorDetalles"></div>
+                <h7 role="heading" aria-level="7">Mi portfolio web</h7>
+                <p>Este sitio web ha sido desarrollado por mí desde 0, para demostrar mis habilidades como programador front-end</p>
+            </div>
+            <div class="tarjetaAbajo">
+                <button class="botonTarjetaAbajo" onclick="cerrarDetalles()">.</button>
+            </div>
+            <div>
+                <div class="tarjetaArriba tarjetaArribaSimple">
+                    <div style="display: flex">
+                        <div class="logoTarjeta logoTitulo">
+                            <img src="./images/designThinking.png" alt="Certificado design thinking IBM" loading="lazy">
+                        </div>
+                        <div class="tarjetaEstudiosInfo">
+                            <h4>Curso de Design Thinking</h4>
+                            <p><a href="https://www.ibm.com/training/badge/c98fdc5c-b5f5-4c00-bd61-2db0efabedde" target="blank">IBM Training</a></p>
+                            <p>Marzo 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="tarjetaArriba tarjetaArribaDoble">
+                    <div style="display: flex">
+                        <div class="logoTarjeta logoTitulo">
+                            <img src="./images/logoCesurColor.png" alt="Logo Cesur" loading="lazy">
+                        </div>
+                        <div class="tarjetaEstudiosInfo">
+                            <h4>FP en Animaciones 3D y entornos interactivos</h4>
+                            <p>Cesur Formación - Desde 2017 hasta 2019</p>
+                            <h5>Habilidades adquiridas:</h5>
+                        </div>
+                    </div>
+                    <div class="contenedorCompetencias">
+                        <div class="competencia competenciaSimple" data-hover="Photoshop">
+                            <img src="./images/competencias/photoshop.png" alt="Logo Photoshop" loading="lazy">
+                        </div>
+                        <div class="competencia competenciaSimple" data-hover="Illustrator">
+                            <img src="./images/competencias/illustrator.png" alt="Logo Illustrator" loading="lazy">
+                        </div>
+                        <div class="competencia" data-hover="3Dmax" onclick="verDetalles(4)">
+                            <img src="./images/competencias/3dmax.png" alt="Logo 3Dmax" loading="lazy">
+                        </div>
+                        <div class="competencia competenciaSimple" data-hover="Unity">
+                            <img src="./images/competencias/unity.png" alt="Logo Unity" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjetaDetalles info3Dmax">
+                    <h6>Mi experiencia con 3dsMax:</h6>
+                    <h7 role="heading" aria-level="7">R de Roomba</h7>
+                    <p>Animación 3D como proyecto grupal de final de asignatura</p>
+                    <iframe src="https://www.youtube.com/embed/LSJC8dmiLKg" style="width:100%; aspect-ratio:16/9; border:0px" alt="R de Roomba"></iframe>
+                    <p><b>Aprendizaje: </b>Técnicas de modelado y texturización 3D, gestión de tiempos de renderización, coordinación entre el equipo de trabajo</p>
+                    <p><b>Duración: </b>6 meses</p>
+                    <p>
+                        <b>Desarrollado junto a: </b>Alejandro Miranda, Pablo de la Rosa, Alejandro Díaz, Alicia González, Raúl Quero, Pablo Moreno,
+                        Javier Paredes, Alejandro López, Rafael Pimentel, Eduardo Ruiz, Aurelio Figuerola
+                    </p>
+                </div>
+                <div class="tarjetaAbajo">
+                    <button class="botonTarjetaAbajo">.</button>
+                </div>
+            </div>
+            <div>
+                <div class="tarjetaArriba tarjetaArribaSimple">
+                    <div style="display: flex">
+                        <div class="logoTarjeta logoTitulo">
+                            <img src="./images/cambridge.png" alt="Logo de Cambridge" loading="lazy">
+                        </div>
+                        <div class="tarjetaEstudiosInfo">
+                            <h4>Nivel B2 en inglés</h4>
+                            <p>Cambridge Certificate</p>
+                            <p>Diciembre 2016</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script src="js/index.js"></script>
+</html>

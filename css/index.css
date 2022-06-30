@@ -1,0 +1,820 @@
+:root
+{
+    --tarjetasArriba: #FFFFFF;
+    --tarjetasAbajo: #F8F8F8;
+    --bordes: #AAAAAA;
+    --fondo: #FFFFFF;
+    --fondoSuavizado1: #F4F4F4;
+    --letras: #000000;
+    --sombras: rgb(0, 0, 0, 0.25);
+    --miColor: #F1C40F;
+    --urls: #1111DD;
+    --etiquetas: #555555;
+}
+
+h1, h2, h3, h4, h5, h6, h7, p, li, a form, input
+{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    color: var(--letras);
+}
+
+a
+{
+    text-decoration: underline;
+    color: var(--urls);
+}
+
+h1, h2, h3, h4, h5, h6, h7
+{
+    font-weight: bold;
+}
+
+h1
+{
+    letter-spacing: calc(0.1vw);
+    margin-bottom: 30px;
+    font-size: xx-large;
+}
+
+h2
+{
+    margin: 0px;
+    font-size: large;
+}
+
+h3
+{
+    margin-top: 0px;
+}
+
+.h3about
+{
+    font-weight: bold;
+    margin-top: 35px;
+}
+
+h5
+{
+    margin-bottom: 15px;
+}
+
+h6
+{
+    font-size: large;
+}
+
+button
+{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+header
+{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.headerFlex
+{
+    display: unset;
+    align-items: center;
+}
+
+.divRostro
+{
+    flex: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.headerDiv
+{
+    flex: 100%;
+}
+
+.fotoCara
+{
+    margin: auto;
+    width: 65%;
+    min-width: 95px;
+    height: auto;
+    border-radius: 100%;
+}
+
+#ampliarFoto
+{
+    display: none;
+}
+
+nav
+{
+    text-align: center;
+    padding-top: 35px;
+    transition: all 0.15s;
+    transition-timing-function: ease;
+}
+
+.ulBanderas
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.ulBanderas li
+{
+    margin: 0px;
+    flex: 25%;
+}
+
+.ulBanderas a
+{
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#botonDarkMode
+{
+    width: 20px;
+    height: auto;
+    padding: 0px;
+}
+
+nav ul
+{
+    list-style-type: none;
+    padding: 0px;
+    margin: auto;
+}
+
+nav a
+{
+    position: relative;
+    z-index: 1;
+}
+
+nav b
+{
+    color: var(--letras);
+}
+
+nav a, nav a:after, nav a:before
+{
+    transition: all .35s;
+}
+
+nav a:after
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: ' ';
+    color: var(--miColor);
+    background: var(--miColor);
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+}
+
+nav a img
+{
+    text-decoration: none;
+    color: #000000;
+    height: 15px;
+}
+
+.ulEnlaces
+{
+    align-items: center;
+    justify-content: center;
+}
+
+.ulEnlaces li
+{
+    margin: 0px;
+    flex: 1;
+    min-width: 90px;
+}
+
+.ulEnlaces a
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+.imgDarkMode
+{
+    border: 0px;
+    border-radius: 25%;
+    background-color: transparent;
+}
+
+#botonDarkMode
+{
+    background-color: var(--fondo);
+    border: 0px;
+}
+
+#botonDarkMode img
+{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.ulMetamask
+{
+    display: none;
+    flex: 1;
+}
+
+body
+{
+    background-color: var(--fondo);
+    width: 100%;
+    margin: 0px;
+}
+
+.idiomas
+{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+    margin-bottom: 10px;
+}
+
+.idiomas a
+{
+    flex: 1;
+    margin: auto;
+}
+
+.idiomas img
+{
+    width: 100%;
+    max-width: 30px;
+    height: auto;
+}
+
+.contenedorSecciones
+{
+    width: 100%;
+    margin: auto;
+    padding: 5vw 5vw;
+    text-align: center;
+}
+
+.seccion
+{
+    text-align: left;
+}
+
+.infoPersonal
+{
+    font-size: medium;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.textoExperiencia
+{
+    font-size: medium;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.tarjetaArriba
+{
+    border: 1px solid var(--bordes);
+    background-color: var(--tarjetasAbajo);
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.tarjetaArribaSimple
+{
+    border-bottom: 1px solid var(--bordes);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.separadorTarjeta
+{
+    border-bottom: 1px solid var(--bordes);
+    margin-bottom: 20px;
+}
+
+.separadorDetalles
+{
+    border-bottom: 1px solid var(--bordes);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tarjetaDetalles
+{
+    border-top: 1px solid var(--fondo);
+    border-bottom: 1px solid var(--fondo);
+    border-left: 1px solid var(--bordes);
+    border-right: 1px solid var(--bordes);
+    display: none;
+    background: var(--tarjetasArriba);
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.tarjetaAbajo
+{
+    border: 1px solid var(--bordes);
+    background-color: var(--tarjetasAbajo);
+    color: var(--letras);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    margin-bottom: 40px;
+    margin-top: -1px;
+}
+
+.tarjetaDetalles img
+{
+    margin-bottom: 15px;
+}
+
+.tarjetaAbajo button
+{
+    margin: auto;
+    width: 90%;
+    background-color: inherit;
+    padding: 15px;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+}
+
+.tarjetaTitulo
+{
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.logoTarjeta
+{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logoTitulo
+{
+    flex: 1;
+    min-width: 75px;
+    max-width: 75px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.logoTitulo img
+{
+    width: 100%;
+    height: auto;
+}
+
+.tarjetaEstudiosInfo
+{
+    flex: 6;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contenedorCompetencias
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.competencia
+{
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 10px var(--sombras), 0 3px 3px var(--sombras);
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    margin: 10px;
+}
+
+.competenciaSimple
+{
+    box-shadow: 0 0px 0px var(--sombras), 0 0px 0px var(--sombras);
+    border: 1px solid var(--bordes);
+}
+
+.competencia img
+{
+    width: 100%;
+    height: auto;
+}
+
+.competenciaDetalle
+{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.competenciaDetalle img
+{
+    width: 100%;
+    height: auto;
+}
+
+.item
+{
+    text-align: center;
+}
+
+.separacionDetalle
+{
+    width: 25px;
+    height: 50px;
+    margin: 10px;
+}
+
+.separacionDetalle img
+{
+    width: 100%;
+    height: auto;
+}
+
+.item
+{
+    border: 1px solid;
+    border-radius: 10px;
+    border-top: 0px;
+}
+
+.imgDetalles
+{
+    width: 100%;
+    margin: auto;
+}
+
+.imgDetalles img
+{
+    width: 100%;
+}
+
+iframe
+{
+    margin-bottom: 10px;
+}
+
+.botonTarjetaAbajo
+{
+    color: var(--tarjetasAbajo);
+}
+
+.seccionContact a
+{
+    text-decoration: underline;
+    color: var(--urls);
+}
+
+.introContacto
+{
+    margin-top: 20px;
+}
+
+.sitioContacto
+{
+    display: flex;
+    margin-top: 1px;
+    margin-bottom: 8px;
+}
+
+.filaAbout
+{
+    display: flex;
+}
+
+.sitioContacto img, .filaAbout img
+{
+    object-fit: contain;
+    width: 20px;
+}
+
+.iconoContacto, .iconoAbout
+{
+    margin-right: 10px;
+}
+
+.circuloSubir
+{
+    display: none;
+}
+
+#footer
+{
+    text-align: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--miColor);
+}
+
+.carousel-indicators li
+{
+    visibility: hidden;
+}
+
+@media only screen and (min-width: 800px)
+{
+    header, nav, .contenedorSecciones, #footer
+    {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 750px;
+    }
+
+    h1
+    {
+        margin-bottom: 10px;
+    }
+    
+    h1, h2
+    {
+        text-align: left;
+        margin-top: 0px;
+    }
+
+    header
+    {
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .headerFlex
+    {
+        display: flex;
+    }
+
+    .divRostro
+    {
+        flex: 1;
+    }
+
+    .headerDiv
+    {
+        flex: 3;
+        padding-left: calc(20px + 1vw);
+    }
+
+    #ampliarFoto
+    {
+        position: fixed;
+        background-color: var(--fondo);
+        text-align: center;
+        justify-content: center;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        z-index: 5;
+    }
+
+    .contenedorAmpliarFoto
+    {
+        width: 50%;
+        height: 100%;
+        margin: auto;
+    }
+
+    #ampliarFoto button
+    {
+        display: block;
+        margin-left: auto; 
+        margin-right: 0;
+    }
+
+    #ampliarFoto img
+    {
+        position: static;
+        height: 80%;
+        width: auto;
+    }
+
+    nav
+    {
+        z-index: 4;
+        margin: auto;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: flex;
+        position: sticky;
+	    top: 0;
+    }
+    
+    .navFija
+    {
+        background-color: var(--fondo);
+        width: 100%;
+        padding-left: 15%;
+        padding-right: 15%;
+        box-shadow: 0px 0px 20px var(--sombras);
+    }
+
+    .ulBanderas
+    {
+        flex: 1;
+        margin: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .metamaskMovil
+    {
+        display: none;
+    }
+    
+    .ulEnlaces
+    {
+        flex: 12;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ulEnlaces a:hover:after
+    {
+        color: var(--letras);
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+    }
+
+    .ulMetamask
+    {
+        display: block;
+    }
+
+    .contenedorSecciones
+    {
+        padding-top: 30px;
+        min-height: 61vh;
+    }
+
+    .competencia
+    {
+        filter: grayscale(100%) contrast(120%);
+        transition: 0.25s;
+    }
+
+    .competenciaSimple
+    {
+        filter: grayscale(0%) contrast(100%);
+        transition: 0s;
+    }
+
+    @keyframes saltoCompetencias
+    {
+        0%
+        {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        50%
+        {
+            margin-top: 8px;
+            margin-bottom: 12px;
+        }
+        100%
+        {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .idiomas img:hover
+    {
+        box-shadow: 0px 0px 2px var(--sombras);
+    }
+
+    .tarjetaArriba:hover
+    {
+        background-color: var(--tarjetasAbajo);
+    }
+
+    .tarjetaArriba:hover .competencia
+    {
+        filter: grayscale(0%) contrast(120%);
+        animation-name: saltoCompetencias;
+        animation-duration: 0.25s;
+    }
+
+    .tarjetaArriba:hover .competenciaSimple
+    {
+        filter: grayscale(0%) contrast(100%);
+        animation-name: none;
+        animation-duration: 0s;
+    }
+
+    .competencia:before
+    {
+        content: attr(data-hover);
+        visibility: hidden;
+        opacity: 0;
+        background-color: var(--etiquetas);
+        color: var(--fondo);
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px 5px;
+        transition: opacity 0.25s ease-in-out; 
+        position: absolute;
+        top: 120%;
+        right: -70%;
+        left: -70%;
+    }
+
+    .competencia:hover
+    {
+        filter: grayscale(0%) contrast(120%);
+        margin-top: 6px;
+    }
+
+    .competenciaSimple:hover
+    {
+        margin-top: 10px;
+    }
+
+    .competencia:hover:before
+    {
+        opacity: 0.85;
+        visibility: visible;
+    }
+
+    .circuloSubir
+    {
+        border: 0px;
+        border-radius: 50%;
+        display: block;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: -10%;
+        right: 10%;
+        background-color: var(--miColor);
+        justify-content: center;
+        text-align: center;
+        transition: all 0.15s;
+        transition-timing-function: ease;
+    }
+
+    .circuloFijo
+    {
+        bottom: 5%;
+    }
+
+    .circuloSubir img
+    {
+        width: 100%;
+    }
+}
