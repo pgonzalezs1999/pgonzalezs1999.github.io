@@ -13,18 +13,21 @@ function ampliarFoto(bool)
 
 $(".contenedorSecciones").load("html/seccionAbout.html" + " .seccion");
 
-$(document).ready(function()
+$(document).ready(function() // Cambiar sección
 {
+    let dispositivo = 0;
+    if(window.innerWidth >= 800) { dispositivo = 1; }
     $(".intercambiador").click(function()
     {
         var url = $(this).attr("href");
         $(".contenedorSecciones").load(url + " .seccion");
-        regresar();
+        if(dispositivo == 1) { window.scrollTo({top: 190, behavior: 'smooth'}); }
+        else { window.scrollTo({top: 700, behavior: 'smooth'}); }
         return false;
-    })
+    });
 });
 
-$(function()
+$(function() // Cambiar barra de navegación y círculo al bajar
 {
     $(window).scroll(function()
     {
@@ -154,24 +157,26 @@ function darkMode()
     // document.querySelector(".ulMetamask button").style.color = "#000000";
 }
 
-let altura; // Guardar altura actual de la pantalla
-let suavizado = 94; // Entre 1 y 99.999999, cuando mas alto mas smooth
+let posV1;
+let posV2; // Guardar altura actual de la pantalla
+let suavizado1 = 2;
+let suavizado2 = 94; // Entre 1 y 99.999999, cuando mas alto mas smooth
 
-function regresar() // La funcion onClick del boton regresar
+function regresar(destino) // La funcion onClick del boton regresar
 {
-    altura = document.documentElement.scrollTop; // Actualizar la posicion actual de la pantalla
-    subirPantalla();
+    posV2 = document.documentElement.scrollTop; // Actualizar la posicion actual de la pantalla
+    subirPantalla(destino);
 }
 
-function subirPantalla() // Función recursiva que sube la pantalla gradualmente
+function subirPantalla(destino) // Función recursiva que sube la pantalla gradualmente
 {
-    if(altura <= 1) { altura = 0 }// Por matematicas nunca puede llegar a 0, asi que se le ayuda manualmente    
+    if(posV2 <= 1) { posV2 = destino }// Por matematicas nunca puede llegar a 0, asi que se le ayuda manualmente    
     else
     {
-        altura = altura*suavizado/100; // Calcular la altura de la siguiente iteracion
-        document.documentElement.scrollTop = altura; // Mover la pantalla a la altura calculada
+        posV2 = posV2*suavizado2/100; // Calcular la altura de la siguiente iteracion
+        document.documentElement.scrollTop = posV2; // Mover la pantalla a la altura calculada
 
-        setTimeout(function() { subirPantalla(); }, 5); // Esperar unos milisegundos para que se sienta como una transicion
+        setTimeout(function() { subirPantalla(destino); }, 5); // Esperar unos milisegundos para que se sienta como una transicion
     }
 }
 
