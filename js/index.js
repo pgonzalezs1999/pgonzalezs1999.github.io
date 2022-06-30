@@ -187,3 +187,6 @@ function cambiarIdioma(idioma)
         break;
     }
 }
+
+darkMode();
+darkMode();
