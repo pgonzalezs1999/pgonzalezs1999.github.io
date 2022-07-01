@@ -592,6 +592,11 @@ iframe
     background-color: var(--miColor);
 }
 
+#footer p
+{
+    width: 90%;
+}
+
 .carousel-indicators li
 {
     visibility: hidden;
