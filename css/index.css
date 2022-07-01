@@ -873,6 +873,7 @@ iframe
         text-align: center;
         transition: all 0.15s;
         transition-timing-function: ease;
+        z-index: 100;
     }
 
     .circuloFijo
