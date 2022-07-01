@@ -331,6 +331,15 @@ body
     margin-bottom: 20px;
 }
 
+.separadorFooter
+{
+    border-bottom: 1px solid var(--letras);
+    margin: auto;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .separadorDetalles
 {
     border-bottom: 1px solid var(--bordes);
@@ -445,6 +454,13 @@ body
     border: 1px solid var(--bordes);
 }
 
+.competenciaExtensible
+{
+    animation-name: spamCompetencias;
+    animation-duration: 6.25s;
+    animation-iteration-count: infinite;
+}
+
 .competencia img
 {
     width: 100%;
@@ -549,6 +565,22 @@ iframe
     display: none;
 }
 
+.listaAbajo
+{
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.listaAbajo a
+{
+    text-decoration: underline;
+    font-weight: normal;
+    flex: 1;
+    color: var(--letras);
+}
+
 #footer
 {
     text-align: center;
@@ -563,6 +595,35 @@ iframe
 .carousel-indicators li
 {
     visibility: hidden;
+}
+
+@keyframes spamCompetencias
+{
+    0%
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    20%
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    22%
+    {
+        margin-top: 8px;
+        margin-bottom: 12px;
+    }
+    24%
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    100%
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 @media only screen and (min-width: 800px)
@@ -747,6 +808,7 @@ iframe
         filter: grayscale(0%) contrast(120%);
         animation-name: saltoCompetencias;
         animation-duration: 0.25s;
+        animation-iteration-count: 0;
     }
 
     .tarjetaArriba:hover .competenciaSimple
@@ -816,5 +878,15 @@ iframe
     .circuloSubir img
     {
         width: 100%;
+    }
+
+    .listaAbajo
+    {
+        width: 60%;
+    }
+
+    .separadorFooter
+    {
+        width: 55%;
     }
 }

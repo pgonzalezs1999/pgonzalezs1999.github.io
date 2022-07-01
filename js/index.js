@@ -22,7 +22,7 @@ $(document).ready(function() // Cambiar sección
         var url = $(this).attr("href");
         $(".contenedorSecciones").load(url + " .seccion");
         if(dispositivo == 1) { window.scrollTo({top: 190, behavior: 'smooth'}); }
-        else { window.scrollTo({top: 700, behavior: 'smooth'}); }
+        else { window.scrollTo({top: 710, behavior: 'smooth'}); }
         return false;
     });
 });
@@ -35,12 +35,12 @@ $(function() // Cambiar barra de navegación y círculo al bajar
         if (scroll >= 200)
         {
             $(".circuloSubir").addClass("circuloFijo");
-            $("nav").addClass("navFija");
+            $(".navArriba").addClass("navFija");
         }
         else
         {
             $(".circuloSubir").removeClass("circuloFijo");
-            $("nav").removeClass("navFija");
+            $(".navArriba").removeClass("navFija");
         }
     });
 });
