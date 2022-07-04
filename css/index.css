@@ -50,7 +50,7 @@ h3
 .h3about
 {
     font-weight: bold;
-    margin-top: 35px;
+    margin-top: 25px;
 }
 
 h5
@@ -591,6 +591,8 @@ iframe
 #footer p
 {
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .carousel-indicators li
@@ -700,7 +702,7 @@ iframe
     #ampliarFoto img
     {
         position: static;
-        height: 80%;
+        height: 95%;
         width: auto;
     }
 
@@ -724,13 +726,13 @@ iframe
         box-shadow: 0px 0px 20px var(--sombras);
     }
 
-    .ulBanderas
+    /*.ulBanderas
     {
         flex: 1;
         margin: 0px;
         padding-left: 10px;
         padding-right: 10px;
-    }
+    }*/
     
     .ulEnlaces
     {
@@ -784,9 +786,23 @@ iframe
         }
     }
 
-    .idiomas img:hover
+    /*.idiomas img:hover
     {
         box-shadow: 0px 0px 2px var(--sombras);
+    }*/
+
+    .competenciaAbout:hover 
+    {
+        animation-name: giroCompetencias;
+        animation-duration: 0.2s;
+    }
+
+    @keyframes giroCompetencias
+    {
+        100%
+        {
+            transform: rotate(360deg);
+        }
     }
 
     .tarjetaArriba:hover
@@ -840,8 +856,33 @@ iframe
 
     .competencia:hover:before
     {
-        opacity: 0.85;
-        visibility: visible;
+        animation-name: competenciaBeforeAparicion;
+        animation-duration: 15s;
+        transition-delay: 1s;
+    }
+
+    @keyframes competenciaBeforeAparicion
+    {
+        0%
+        {
+            visibility: hidden;
+            opacity: 0;
+        }
+        1%
+        {
+            opacity: 0;
+            visibility: visible;
+        }
+        2%
+        {
+            opacity: 0.85;
+            visibility: visible;
+        }
+        100%
+        {
+            opacity: 0.85;
+            visibility: visible;
+        }
     }
 
     .circuloSubir
