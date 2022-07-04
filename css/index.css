@@ -50,7 +50,7 @@ h3
 .h3about
 {
     font-weight: bold;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 h5
@@ -133,7 +133,7 @@ nav
 .ulBanderas li
 {
     margin: 0px;
-    flex: 25%;
+    flex: 10%;
 }
 
 .ulBanderas a
@@ -752,7 +752,7 @@ iframe
     .contenedorSecciones
     {
         padding-top: 30px;
-        min-height: 61vh;
+        min-height: 55vh;
     }
 
     .competencia
