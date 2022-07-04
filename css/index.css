@@ -78,6 +78,11 @@ header
     margin-top: 30px;
 }
 
+.headerDiv
+{
+    flex: 100%;
+}
+
 .headerFlex
 {
     display: unset;
@@ -91,11 +96,6 @@ header
     cursor: pointer;
 }
 
-.headerDiv
-{
-    flex: 100%;
-}
-
 .fotoCara
 {
     margin: auto;
@@ -103,6 +103,8 @@ header
     min-width: 95px;
     height: auto;
     border-radius: 100%;
+    box-shadow: 0 2px 5px var(--sombras), 0 2px 2px var(--sombras);
+    border: 1px solid var(--bordes);
 }
 
 #ampliarFoto
@@ -236,12 +238,6 @@ nav a img
 {
     max-height: 100%;
     max-width: 100%;
-}
-
-.ulMetamask
-{
-    display: none;
-    flex: 1;
 }
 
 body
@@ -735,11 +731,6 @@ iframe
         padding-left: 10px;
         padding-right: 10px;
     }
-
-    .metamaskMovil
-    {
-        display: none;
-    }
     
     .ulEnlaces
     {
@@ -754,11 +745,6 @@ iframe
         opacity: 1;
         visibility: visible;
         height: 100%;
-    }
-
-    .ulMetamask
-    {
-        display: block;
     }
 
     .contenedorSecciones

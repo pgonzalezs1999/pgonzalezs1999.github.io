@@ -1,13 +1,13 @@
 function ampliarFoto(bool)
 {
-    if(bool == 1 && screen.width >= 800)
+    if(bool == 1 && window.innerWidth > 800)
     {
         document.getElementById("ampliarFoto").style.display = "block";
+        document.documentElement.scrollTop = 0;
     }
     else
     {
         document.getElementById("ampliarFoto").style.display = "none";
-        document.documentElement.scrollTop = 0;
     }
 }
 
@@ -154,7 +154,6 @@ function darkMode()
     {
         elem.style.filter =  "invert(" +  invertirTheme % 2 + ")";
     });
-    // document.querySelector(".ulMetamask button").style.color = "#000000";
 }
 
 let posV1;
