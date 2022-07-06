@@ -12,7 +12,7 @@
     --etiquetas: #555555;
 }
 
-h1, h2, h3, h4, h5, h6, h7, p, li, a form, input
+h1, h2, h3, h4, h5, h6, h7, p, b, li, a form, input
 {
     font-family: 'Baloo Bhaijaan 2', cursive;
     color: var(--letras);
@@ -450,8 +450,13 @@ body
 .competenciaExtensible
 {
     animation-name: spamCompetencias;
-    animation-duration: 14s;
+    animation-duration: 12s;
     animation-iteration-count: infinite;
+}
+
+.competenciaExtensible:hover
+{
+    cursor: pointer;
 }
 
 .competencia img
@@ -527,7 +532,7 @@ iframe
 
 .introContacto
 {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .sitioContacto
@@ -592,6 +597,12 @@ iframe
     margin-right: auto;
 }
 
+footer p, footer b, .listaAbajo a
+{
+    color: #000000;
+    text-decoration: none;
+}
+
 .carousel-indicators li
 {
     visibility: hidden;
@@ -599,25 +610,25 @@ iframe
 
 @keyframes spamCompetencias
 {
-    0%
+    27%
     {
-        margin-top: 10px;
-        margin-bottom: 10px;
+        transform: rotate(0deg);
     }
-    98%
+    27.5%
     {
-        margin-top: 10px;
-        margin-bottom: 10px;
+        transform: rotate(15deg);
     }
-    99%
+    28.5%
     {
-        margin-top: 5px;
-        margin-bottom: 15px;
+        transform: rotate(-15deg);
     }
-    100%
+    29.5%
     {
-        margin-top: 10px;
-        margin-bottom: 10px;
+        transform: rotate(15deg);
+    }
+    30%
+    {
+        transform: rotate(0deg);
     }
 }
 
@@ -650,6 +661,11 @@ iframe
     .divRostro
     {
         flex: 1;
+    }
+    
+    .fotoCara:hover
+    {
+        cursor: zoom-in;
     }
 
     .headerDiv
@@ -703,6 +719,12 @@ iframe
         position: sticky;
 	    top: 0;
     }
+
+    .navArriba
+    {
+        border-top: 1px solid var(--bordes);
+        border-bottom: 1px solid var(--bordes);
+    }
     
     .navFija
     {
@@ -721,17 +743,17 @@ iframe
         margin-bottom: 0px;
     }
 
-    /*.ulBanderas
+    .ulBanderas
     {
         flex: 1;
         margin: 0px;
         padding-left: 10px;
         padding-right: 10px;
-    }*/
+    }
     
     .ulEnlaces
     {
-        flex: 12;
+        flex: 19;
         display: flex;
         flex-wrap: wrap;
     }
@@ -910,6 +932,12 @@ iframe
     .listaAbajo
     {
         width: 60%;
+    }
+
+    footer .intercambiador:hover b
+    {
+        color: #FFFFFF;
+        cursor: pointer;
     }
 
     .separadorFooter
