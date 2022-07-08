@@ -326,7 +326,7 @@ body
 
 .separadorFooter
 {
-    border-bottom: 1px solid var(--letras);
+    border-bottom: 1px solid #000000;
     margin: auto;
     width: 80%;
     margin-top: 20px;
@@ -540,6 +540,11 @@ iframe
     display: flex;
     margin-top: 1px;
     margin-bottom: 8px;
+}
+
+.sitioContacto p
+{
+    margin-top: 2px;
 }
 
 .filaAbout
