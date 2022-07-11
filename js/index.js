@@ -156,10 +156,8 @@ function darkMode()
     });
 }
 
-let posV1;
 let posV2; // Guardar altura actual de la pantalla
-let suavizado1 = 2;
-let suavizado2 = 94; // Entre 1 y 99.999999, cuando mas alto mas smooth
+let suavizado2 = 94; // Entre 1 y 99.9999, cuando mas alto mas smooth
 
 function regresar(destino) // La funcion onClick del boton regresar
 {
@@ -179,7 +177,7 @@ function subirPantalla(destino) // Función recursiva que sube la pantalla gradu
     }
 }
 
-function cambiarIdioma(idioma)
+/*function cambiarIdioma(idioma)
 {
     switch(idioma)
     {
@@ -190,7 +188,7 @@ function cambiarIdioma(idioma)
             console.log("ingles");
         break;
     }
-}
+}*/
 
 darkMode();
 darkMode();
