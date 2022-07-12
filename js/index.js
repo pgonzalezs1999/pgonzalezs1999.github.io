@@ -21,7 +21,7 @@ $(document).ready(function() // Cambiar sección
     {
         var url = $(this).attr("href");
         $(".contenedorSecciones").load(url + " .seccion");
-        if(dispositivo == 1) { window.scrollTo({top: 190, behavior: 'smooth'}); }
+        if(dispositivo == 1) { window.scrollTo({top: 170, behavior: 'smooth'}); }
         else { window.scrollTo({top: 690, behavior: 'smooth'}); }
         return false;
     });
