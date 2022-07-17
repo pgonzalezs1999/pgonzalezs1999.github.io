@@ -675,7 +675,7 @@ footer p, footer b, .listaAbajo a
     
     .fotoCara:hover
     {
-        cursor: zoom-in;
+        cursor: pointer;
     }
 
     .headerDiv
