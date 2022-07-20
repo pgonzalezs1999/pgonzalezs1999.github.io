@@ -276,7 +276,8 @@ body
 {
     width: 100%;
     margin: auto;
-    padding: 5vw 5vw;
+    padding-left: 30px;
+    padding-right: 30px;
     text-align: center;
 }
 
@@ -361,6 +362,12 @@ body
     margin: auto;
     position: relative;
     z-index: 2;
+}
+
+.pieDeFotoCarousel
+{
+    margin-top: -10px;
+    margin-bottom: 20px;
 }
 
 .tarjetaAbajo
@@ -644,7 +651,7 @@ footer p, footer b, .listaAbajo a
 
 @media only screen and (min-width: 800px)
 {
-    header, nav, .contenedorSecciones, #footer
+    header, .contenedorSecciones, #footer
     {
         padding-top: 20px;
         padding-bottom: 10px;
@@ -728,6 +735,7 @@ footer p, footer b, .listaAbajo a
         display: flex;
         position: sticky;
 	    top: 0;
+        width: 700px;
     }
 
     .navArriba
@@ -783,7 +791,7 @@ footer p, footer b, .listaAbajo a
 
     .contenedorSecciones
     {
-        padding-top: 30px;
+        padding-top: 35px;
     }
 
     .competencia
