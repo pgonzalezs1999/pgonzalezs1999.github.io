@@ -123,8 +123,7 @@ function darkMode()
 
     if(invertirTheme % 2 != 0) // MODO OSCURO
     {
-        $(":root").css("--tarjetasArriba", "#111111");
-        $(":root").css("--tarjetasAbajo", "#222222");
+        $(":root").css("--tarjetas", "#222222");
         $(":root").css("--bordes", "#555555");
         $(":root").css("--fondo", "#111111");
         $(":root").css("--letras", "#EEEEEE");
@@ -137,8 +136,7 @@ function darkMode()
     }
     else // MODO CLARO
     {
-        $(":root").css("--tarjetasArriba", "#FFFFFF");
-        $(":root").css("--tarjetasAbajo", "#F8F8F8");
+        $(":root").css("--tarjetas", "#F8F8F8");
         $(":root").css("--bordes", "#AAAAAA");
         $(":root").css("--fondo", "#FFFFFF");
         $(":root").css("--letras", "#000000");
@@ -156,39 +154,26 @@ function darkMode()
     });
 }
 
-let posV2; // Guardar altura actual de la pantalla
-let suavizado2 = 94; // Entre 1 y 99.9999, cuando mas alto mas smooth
+let posY; // Pos Y actual de la pantalla
+let suavizado = 94; // Porcentaje de smoothness del regreso
 
 function regresar(destino) // La funcion onClick del boton regresar
 {
-    posV2 = document.documentElement.scrollTop; // Actualizar la posicion actual de la pantalla
+    posY = document.documentElement.scrollTop; // Actualizar la posicion actual de la pantalla
     subirPantalla(destino);
 }
 
-function subirPantalla(destino) // Función recursiva que sube la pantalla gradualmente
+function subirPantalla(destino) // Iteraciónde subida de pantalla gradual
 {
-    if(posV2 <= 1) { posV2 = destino }// Por matematicas nunca puede llegar a 0, asi que se le ayuda manualmente    
+    if(posY <= 1) { posY = destino } // Nunca puede llegar a 0, asi que se le ayuda manualmente    
     else
     {
-        posV2 = posV2*suavizado2/100; // Calcular la altura de la siguiente iteracion
-        document.documentElement.scrollTop = posV2; // Mover la pantalla a la altura calculada
+        posY = posY*suavizado/100; // Calcular la altura de la siguiente iteracion
+        document.documentElement.scrollTop = posY; // Mover la pantalla a la altura calculada
 
-        setTimeout(function() { subirPantalla(destino); }, 5); // Esperar unos milisegundos para que se sienta como una transicion
+        setTimeout(function() { subirPantalla(destino); }, 5); // Esperar ms para que se sienta como transicion
     }
 }
-
-/*function cambiarIdioma(idioma)
-{
-    switch(idioma)
-    {
-        case 1:
-            console.log("español");
-        break;
-        case 2:
-            console.log("ingles");
-        break;
-    }
-}*/
 
 darkMode();
 darkMode();
