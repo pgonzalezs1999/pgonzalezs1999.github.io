@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: pgonzalezs1999.github.io
+Token: e3337d16fbc2df40c77946faef92e6e7de84ebcc87206fa8883887943d4d9e8c
