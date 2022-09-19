@@ -13,7 +13,7 @@ function ampliarFoto(bool)
 
 $(".contenedorSecciones").load("html/seccionAbout.html" + " .seccion");
 
-$(document).ready(function() // Cambiar sección
+$(document).ready(function() // Cambiar seccion
 {
     let dispositivo = 0;
     if(window.innerWidth >= 800) { dispositivo = 1; }
@@ -23,11 +23,15 @@ $(document).ready(function() // Cambiar sección
         $(".contenedorSecciones").load(url + " .seccion");
         if(dispositivo == 1) { window.scrollTo({top: 190, behavior: 'smooth'}); }
         else { window.scrollTo({top: 670, behavior: 'smooth'}); }
+        /*while(document.getElementsByClassName("animInicioTarjeta").length > 0)
+        {
+            document.getElementsByClassName("animInicioTarjeta")[0].classList.remove("animInicioTarjeta");
+        }*/
         return false;
     });
 });
 
-$(function() // Cambiar barra de navegación y círculo al bajar
+$(function() // Cambiar barra de navegacion y circulo al bajar
 {
     $(window).scroll(function()
     {
@@ -177,3 +181,47 @@ function subirPantalla(destino) // Iteraciónde subida de pantalla gradual
 
 darkMode();
 darkMode();
+
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+document.addEventListener('scroll', function () // Animacion al aparecer nuevo elemento en pantalla
+{
+    if(document.getElementById("tarjetaGreySystems") != null)
+    {
+        if(isInViewport(document.getElementById("tarjetaGreySystems"))) { animacionInicialTarjeta(document.getElementById("tarjetaGreySystems")); }
+        if(isInViewport(document.getElementById("tarjetaNewMun"))) { animacionInicialTarjeta(document.getElementById("tarjetaNewMun")); }
+        if(isInViewport(document.getElementById("tarjetaDom3D"))) { animacionInicialTarjeta(document.getElementById("tarjetaDom3D")); }
+        if(isInViewport(document.getElementById("tarjetaCAIL"))) { animacionInicialTarjeta(document.getElementById("tarjetaCAIL")); }
+    }
+    else if(document.getElementById("tarjetaUEM") != null)
+    {
+        if(isInViewport(document.getElementById("tarjetaUEM")))
+        {
+            animacionInicialTarjeta(document.getElementById("tarjetaUEM"));
+            animacionInicialTarjeta(document.getElementById("tarjetaUEMabajo"));
+        }
+        if(isInViewport(document.getElementById("tarjetaDesignThinking"))) { animacionInicialTarjeta(document.getElementById("tarjetaDesignThinking")); }
+        if(isInViewport(document.getElementById("tarjetaMarketingGoogle"))) { animacionInicialTarjeta(document.getElementById("tarjetaMarketingGoogle")); }
+        if(isInViewport(document.getElementById("tarjetaCesur")))
+        {
+            animacionInicialTarjeta(document.getElementById("tarjetaCesur"));
+            animacionInicialTarjeta(document.getElementById("tarjetaCesurAbajo"));
+        }
+        if(isInViewport(document.getElementById("tarjetaCambridge"))) { animacionInicialTarjeta(document.getElementById("tarjetaCambridge")); }
+    }
+}, { 
+    passive: true 
+});
+
+function animacionInicialTarjeta(elemento)
+{
+    elemento.classList.add("animInicioTarjeta");
+}
