@@ -632,6 +632,12 @@ footer p, footer b, .listaAbajo a
     animation-timing-function: ease-out;
 }
 
+.noAnim
+{
+    opacity: 1;
+    animation-name: none;
+}
+
 @keyframes animInicioTarjeta
 {
     0%
