@@ -828,7 +828,7 @@ footer p, footer b, .listaAbajo a
     .competenciaAbout:hover 
     {
         animation-name: giroCompetencias;
-        animation-duration: 0.2s;
+        animation-duration: 0.25s;
     }
 
     @keyframes giroCompetencias
