@@ -209,7 +209,9 @@ function comprobarPosiciones()
             excluirAnimacionInicial(document.getElementById("tarjetaUEM"));
             excluirAnimacionInicial(document.getElementById("tarjetaUEMabajo"));
         }
-        if(isInViewport(document.getElementById("tarjetaDesignThinking"))) { excluirAnimacionInicial(document.getElementById("tarjetaDesignThinking")); }
+        if(isInViewport(document.getElementById("tarjetaHSK"))) { excluirAnimacionInicial(document.getElementById("tarjetaHSK")); }
+        if(isInViewport(document.getElementById("tarjetaDisrup3"))) { excluirAnimacionInicial(document.getElementById("tarjetaDisrup3")); }
+        if(isInViewport(document.getElementById("tarjetaDesignThinking"))) { animacionInicialTarjeta(document.getElementById("tarjetaDesignThinking")); }
         if(isInViewport(document.getElementById("tarjetaMarketingGoogle"))) { animacionInicialTarjeta(document.getElementById("tarjetaMarketingGoogle")); }
         if(isInViewport(document.getElementById("tarjetaCesur")))
         {
