@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pablo González</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="#inicio" class="nav-link active" data-nav="inicio">Inicio</a></li>
+        <li><a href="#sobre-mi" class="nav-link" data-nav="sobre-mi">Sobre mí</a></li>
+        <li><a href="#experiencia" class="nav-link" data-nav="experiencia">Experiencia</a></li>
+        <li><a href="#proyectos" class="nav-link" data-nav="proyectos">Proyectos</a></li>
+        <li><a href="#estudios" class="nav-link" data-nav="estudios">Estudios</a></li>
+        <li><a href="#idiomas" class="nav-link" data-nav="idiomas">Idiomas</a></li>
+        <li><a href="#contacto" class="nav-link" data-nav="contacto">Contacto</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <section id="inicio" class="section hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Hola, soy <span class="gradient-text">Pablo González</span>
+          </h1>
+          <p class="hero-subtitle">Ingeniero informático y desarrollador de software</p>
+          <p class="hero-desc">
+            Construyo soluciones digitales robustas y elegantes. Especializado en desarrollo full-stack web y de aplicaciones móviles.
+          </p>
+          <div class="hero-actions">
+            <a href="#contacto" class="btn btn-primary">Contáctame</a>
+            <a href="#proyectos" class="btn btn-outline">Ver proyectos</a>
+          </div>
+          <div class="hero-social">
+            <a href="https://github.com/pgonzalezs1999" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/pablo-g-380564231" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:pgonzalezs1999@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo-wrapper">
+            <div class="hero-photo-glow"></div>
+            <img src="user-provided/fotoCara.png" alt="Foto de perfil" class="hero-photo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section">
+      <div class="container">
+        <h2 class="section-title">Sobre mí</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Soy un ingeniero informático de Málaga pero vivo y trabajo en <strong>Madrid</strong>, apasionado por construir software que marque la diferencia. 
+              Me especializo en el desarrollo web y de aplicaciones móviles.
+            </p>
+            <p>
+              Cuando no estoy programando, me encontrarás explorando nuevas tecnologías, y proyectos.
+              Actualmente dedico mi tiempo libre a explorar en profundidad Ubuntu, Kotlin y OpenCode.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number" data-target=11">0</span>
+              <span class="stat-label">Proyectos desarrollados, empresas, proyectos personales y universidad</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="10">0</span>
+              <span class="stat-label">Lenguajes de programación y frameworks</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="5">0</span>
+              <span class="stat-label">Empresas para las que he desarrollado</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="8">0</span>
+              <span class="stat-label">Años programando</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section">
+      <div class="container">
+        <h2 class="section-title">Experiencia</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024 - actualidad</div>
+            <div class="timeline-content">
+              <div class="timeline-row">
+                <img class="timeline-logo" src="https://icons.duckduckgo.com/ip3/medac.es.ico" alt="Medac" loading="lazy">
+                <div class="timeline-body">
+                  <h3>Profesor de FP</h3>
+                <h4>Medac · Madrid</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+              <div class="timeline-row">
+                <img class="timeline-logo" src="user-provided/sotec.png" alt="Sotec Consulting" loading="lazy">
+                <div class="timeline-body">
+                  <h3>Desarrollador Fullstack</h3>
+                  <h4>Sotec Consulting · Madrid</h4>
+                   <p>Añadía funcionalidades y corregía fallos en la web interna de la empresa y su 
+                  base de datos.</p>
+                  <div class="study-techs">
+                    <i class="devicon-csharp-plain" title="C#"></i>
+                    <i class="devicon-dotnetcore-plain" title="ASP.NET"></i>
+                    <i class="devicon-mysql-plain" title="MySQL"></i>
+                    <i class="devicon-html5-plain" title="HTML5"></i>
+                    <i class="devicon-css3-plain" title="CSS3"></i>
+                    <i class="devicon-javascript-plain" title="JavaScript"></i>
+                    <i class="devicon-git-plain" title="Git"></i>
+                    <i class="fas fa-tasks" title="Scrum"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022</div>
+            <div class="timeline-content">
+              <div class="timeline-row">
+                <img class="timeline-logo" src="user-provided/newmun.png" alt="Newmun" loading="lazy">
+                <div class="timeline-body">
+                  <h3>Programador Frontend</h3>
+                  <h4>Newmun · Madrid</h4>
+                  <p>Desarrollo de aplicaciones móviles con Flutter y maquetación con Figma.</p>
+                  <div class="study-techs">
+                    <i class="devicon-figma-plain" title="Figma"></i>
+                    <i class="devicon-flutter-plain" title="Flutter"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2019</div>
+            <div class="timeline-content">
+              <div class="timeline-row">
+                <img class="timeline-logo" src="user-provided/dom3d.png" alt="Dom3D" loading="lazy">
+                <div class="timeline-body">
+                  <h3>Modelador y Animador 3D</h3>
+                  <h4>Dom3D · Málaga</h4>
+                  <p>Modelado y animación 3D para proyectos de realidad virtual.</p>
+                  <div class="study-techs">
+                    <i class="fas fa-cube" title="3ds Max"></i>
+                    <i class="devicon-photoshop-plain" title="Photoshop"></i>
+                    <i class="devicon-unity-plain" title="Unity"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2018</div>
+            <div class="timeline-content">
+              <div class="timeline-row">
+                <img class="timeline-logo" src="user-provided/cail.png" alt="CAIL Languages" loading="lazy">
+                <div class="timeline-body">
+                  <h3>Profesor de Inglés para Niños</h3>
+                  <h4>CAIL Languages · Bolonia, Italia</h4>
+                  <p>Impartición de clases de inglés a niños en Bolonia, Italia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section">
+      <div class="container">
+        <h2 class="section-title">Proyectos</h2>
+        <div class="projects-grid">
+          <div class="project-card project-card-wide">
+            <div class="phone-mockup">
+              <div class="phone-frame">
+                 <div class="phone-screen carousel-container" id="wefood-carousel">
+                   <img src="user-provided/wefood/cropped/wefood1_left.png" class="carousel-slide active" alt="WeFood pantalla 1" data-caption="Inicio de sesión en la aplicación">
+                   <img src="user-provided/wefood/cropped/wefood1_right.png" class="carousel-slide" alt="WeFood pantalla 2" data-caption="Pantalla de ajustes">
+                   <img src="user-provided/wefood/cropped/wefood2_left.png" class="carousel-slide" alt="WeFood pantalla 3" data-caption="Menú para gestionar los productos ofertados como vendedor">
+                   <img src="user-provided/wefood/cropped/wefood2_right.png" class="carousel-slide" alt="WeFood pantalla 4" data-caption="Menú para editar un producto como vendedor">
+                   <img src="user-provided/wefood/cropped/wefood3_left.png" class="carousel-slide" alt="WeFood pantalla 5" data-caption="Pantalla de búsqueda para los usuarios compradores">
+                   <img src="user-provided/wefood/cropped/wefood3_right.png" class="carousel-slide" alt="WeFood pantalla 6" data-caption="Pantalla de información acerca de un producto seleccionado">
+                   <img src="user-provided/wefood/cropped/wefood4_left.png" class="carousel-slide" alt="WeFood pantalla 7" data-caption="Pantalla de selección de ubicación para personalizar una búsqueda">
+                   <img src="user-provided/wefood/cropped/wefood4_right.png" class="carousel-slide" alt="WeFood pantalla 8" data-caption="Historial de pedidos como usuario comprador">
+                </div>
+              </div>
+              <div class="carousel-bar">
+                <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+                <div class="carousel-dots" id="wefood-dots"></div>
+                <button class="carousel-btn next" aria-label="Siguiente">›</button>
+              </div>
+            </div>
+            <div class="phone-content">
+              <h3 class="project-title">WeFood</h3>
+              <p class="project-desc">Aplicación completa para Android / iOS para vender a precio reducido comida no vendida por restaurantes y hoteles durante una jornada, para reducir el desperdicio de alimentos. Desarrollada al completo, incluyendo registro de usuarios, inicio de sesión, reconocimiento de huella dactilar y FaceID, base de datos, API, pasarela de pagos para latinoamérica y conexión a la API de Google Maps. Abandonada por falta de presupuesto e incapacidad de captar clientes reales. Deslistada de los buscadores por inactividad. Código en GitHub</p>
+              <p class="carousel-caption"><b>La imagen muestra:</b> Inicio de sesión en la aplicación</p>
+              <div class="study-techs">
+                <i class="devicon-flutter-plain" title="Flutter"></i>
+                <i class="devicon-laravel-original" title="Laravel"></i>
+                <i class="devicon-amazonwebservices-plain-wordmark" title="AWS"></i>
+                <i class="fas fa-server" title="API REST"></i>
+                <i class="devicon-github-original" title="GitHub"></i>
+              </div>
+            </div>
+          </div>
+          <div class="project-card project-card-wide">
+            <div class="phone-content">
+              <h3 class="project-title">ReadyRecipes</h3>
+              <p class="project-desc">Buscador de recetas online en base a múltiples parámetros, como ingredientes, tipo de comida, hora del día... conectada a una base de datos poblada webscrapeando videos de YouTube y procesadas automáticamente mediante una inteligencia artificial entrenada por nosotros. Proyecto de universidad</p>
+              <p class="carousel-caption"><b>La imagen muestra:</b> Pantalla de buscador. La pprincipal de la aplicación</p>
+              <div class="study-techs">
+                <i class="devicon-angularjs-plain" title="Angular"></i>
+                <i class="devicon-laravel-original" title="Laravel"></i>
+                <i class="devicon-python-plain" title="Python"></i>
+                <i class="fas fa-brain" title="IA"></i>
+                <i class="fas fa-robot" title="Web Scraping"></i>
+                <i class="devicon-github-original" title="GitHub"></i>
+                <i class="devicon-mysql-plain" title="MySQL"></i>
+              </div>
+              <p class="project-collab">Desarrollado junto a <a href="https://github.com/Ignaciogg" target="_blank">Ignacio Gil</a>, <a href="https://github.com/Ignaciogg" target="_blank">Mario Uceda</a> y <a href="https://github.com/sfms97" target="_blank">Samuel Fernández</a></p>
+            </div>
+            <div class="laptop-mockup">
+              <div class="laptop-frame">
+                  <div class="laptop-screen carousel-container">
+                    <img src="user-provided/readyrecipes/readyRecipes1.png" class="carousel-slide active" alt="ReadyRecipes pantalla 1" data-caption="Pantalla de buscador. La pprincipal de la aplicación">
+                    <img src="user-provided/readyrecipes/readyRecipes2.png" class="carousel-slide" alt="ReadyRecipes pantalla 2" data-caption="Pantalla de detalles de una receta seleccionada">
+                    <img src="user-provided/readyrecipes/readyRecipes3.png" class="carousel-slide" alt="ReadyRecipes pantalla 3" data-caption="Pantalla de estadisticas para un administrador">
+                    <img src="user-provided/readyrecipes/readyRecipes4.png" class="carousel-slide" alt="ReadyRecipes pantalla 4" data-caption="Gestión de usuarios por parte de un administrador">
+                    <img src="user-provided/readyrecipes/readyRecipes5.png" class="carousel-slide" alt="ReadyRecipes pantalla 5" data-caption="Pantalla de gestión de usuarios por parte de un administrador">
+                </div>
+              </div>
+              <div class="laptop-base"></div>
+              <div class="carousel-bar">
+                <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+                <div class="carousel-dots"></div>
+                <button class="carousel-btn next" aria-label="Siguiente">›</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="estudios" class="section">
+      <div class="container">
+        <h2 class="section-title">Estudios</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2025 - 2026</div>
+            <div class="timeline-content">
+              <div class="timeline-row">
+                <img class="timeline-logo" src="https://icons.duckduckgo.com/ip3/uah.es.ico" alt="Universidad de Alcalá" loading="lazy">
+                <div class="timeline-body">
+                  <h3>Máster en Profesorado</h3>
+                  <h4>Universidad de Alcalá</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+              <div class="timeline-row">
+                <img class="timeline-logo" src="user-provided/logoDisrup3.png" alt="Disrup3" loading="lazy">
+                <div class="timeline-body">
+                  <h3>Bootcamp de Desarrollador Web3 Full-Stack</h3>
+                  <h4>Disrup3 · Remoto</h4>
+                  <div class="study-techs">
+                    <i class="devicon-solidity-plain" title="Solidity"></i>
+                    <i class="fa-brands fa-ethereum" title="Ethereum"></i>
+                    <i class="fa-solid fa-coins" title="Crypto"></i>
+                    <i class="devicon-react-original" title="React"></i>
+                    <i class="devicon-git-plain" title="Git"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2019 - 2024</div>
+            <div class="timeline-content">
+              <div class="timeline-row">
+                <img class="timeline-logo" src="https://icons.duckduckgo.com/ip3/universidadeuropea.com.ico" alt="Universidad Europea de Madrid" loading="lazy">
+                <div class="timeline-body">
+                  <h3>Ingeniería Informática</h3>
+                  <h4>Universidad Europea de Madrid</h4>
+                  <p class="study-grade">Nota media: 7.87</p>
+                  <div class="study-techs">
+                    <i class="devicon-java-plain" title="Java"></i>
+                    <i class="devicon-html5-plain" title="HTML5"></i>
+                    <i class="devicon-css3-plain" title="CSS3"></i>
+                    <i class="devicon-javascript-plain" title="JavaScript"></i>
+                    <i class="devicon-react-original" title="React"></i>
+                    <i class="devicon-angularjs-plain" title="Angular"></i>
+                    <i class="devicon-python-plain" title="Python"></i>
+                    <i class="devicon-php-plain" title="PHP"></i>
+                    <i class="devicon-laravel-original" title="Laravel"></i>
+                    <i class="devicon-googlecloud-plain" title="Google Cloud"></i>
+                    <i class="devicon-linux-plain" title="Linux"></i>
+                    <i class="devicon-git-plain" title="Git"></i>
+                    <i class="devicon-mysql-plain" title="MySQL"></i>
+                    <i class="devicon-tensorflow-original" title="TensorFlow"></i>
+                    <i class="devicon-jupyter-plain" title="Jupyter"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2017 - 2019</div>
+            <div class="timeline-content">
+              <div class="timeline-row">
+                <div class="timeline-logo-wrap">
+                  <img class="timeline-logo" src="user-provided/cesur.jpg" alt="Cesur" loading="lazy" style="object-fit:cover;transform:scale(1.35)">
+                </div>
+                <div class="timeline-body">
+                  <h3>FP Animaciones 3D, Juegos y Entornos Interactivos</h3>
+                  <h4>Cesur</h4>
+                  <p class="study-grade">Nota media: 8.55</p>
+                  <div class="study-techs">
+                    <i class="devicon-unity-plain" title="Unity"></i>
+                    <i class="fas fa-cube" title="3DS Max"></i>
+                    <i class="devicon-html5-plain" title="HTML5"></i>
+                    <i class="devicon-css3-plain" title="CSS3"></i>
+                    <i class="devicon-javascript-plain" title="JavaScript"></i>
+                    <i class="devicon-photoshop-plain" title="Photoshop"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="idiomas" class="section">
+      <div class="container">
+        <h2 class="section-title">Idiomas</h2>
+        <div class="langs-wrap">
+          <div class="langs-visual">
+            <svg class="langs-svg" viewBox="0 0 510 360" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 17 300 A 238 238 0 0 1 493 300" stroke="#2a2a3e" stroke-width="8" fill="none"/>
+              <path d="M 17 300 A 238 238 0 0 1 493 300" stroke="#eab308" stroke-width="8" fill="none" stroke-dasharray="747.7 0"/>
+              <path d="M 61 300 A 194 194 0 0 1 449 300" stroke="#2a2a3e" stroke-width="8" fill="none"/>
+              <path d="M 61 300 A 194 194 0 0 1 449 300" stroke="#3b82f6" stroke-width="8" fill="none" stroke-dasharray="457.1 152.4"/>
+              <path d="M 105 300 A 150 150 0 0 1 405 300" stroke="#2a2a3e" stroke-width="8" fill="none"/>
+              <path d="M 105 300 A 150 150 0 0 1 405 300" stroke="#ef4444" stroke-width="8" fill="none" stroke-dasharray="70.7 400.5"/>
+              <path d="M 149 300 A 106 106 0 0 1 361 300" stroke="#2a2a3e" stroke-width="8" fill="none"/>
+              <path d="M 149 300 A 106 106 0 0 1 361 300" stroke="#22c55e" stroke-width="8" fill="none" stroke-dasharray="99.9 233.1"/>
+            </svg>
+          </div>
+          <div class="langs-list">
+            <div class="langs-item">
+              <span class="langs-bar" style="background:#eab308"></span>
+              <span class="langs-name">Español</span>
+              <span class="langs-desc">Nativo</span>
+            </div>
+            <div class="langs-item">
+              <span class="langs-bar" style="background:#3b82f6"></span>
+              <span class="langs-name">Inglés</span>
+              <span class="langs-desc">B2 - Cambridge</span>
+            </div>
+            <div class="langs-item">
+              <span class="langs-bar" style="background:#ef4444"></span>
+              <span class="langs-name">Chino</span>
+              <span class="langs-desc">HSK3</span>
+            </div>
+            <div class="langs-item">
+              <span class="langs-bar" style="background:#22c55e"></span>
+              <span class="langs-name">Portugués</span>
+              <span class="langs-desc">Exposición</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>Estoy siempre abierto a nuevas oportunidades, colaboraciones interesantes 
+            o simplemente charlar sobre tecnología. No dudes en escribirme.</p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:pgonzalezs1999@gmail.com">pgonzalezs1999@gmail.com</a>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-linkedin-in"></i>
+                <a href="https://www.linkedin.com/in/pablo-g-380564231" target="_blank">linkedin.com/in/pablo-g-380564231</a>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/pgonzalezs1999" target="_blank">github.com/pgonzalezs1999</a>
+              </div>
+            </div>
+            <a href="user-provided/CV.pdf" target="_blank" class="btn btn-outline cv-btn">
+              <i class="fas fa-file-pdf"></i> Descargar CV
+            </a>
+        </div>
+      </div>
+    </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Pablo González. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="#inicio" class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>
