@@ -13,6 +13,26 @@
 
   let statAnimated = false;
 
+  const themeToggle = document.getElementById('themeToggle');
+  const currentTheme = localStorage.getItem('theme') || 'dark';
+  if (currentTheme === 'light') {
+    themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+  }
+
+  themeToggle.addEventListener('click', () => {
+    const html = document.documentElement;
+    const isLight = html.getAttribute('data-theme') === 'light';
+    if (isLight) {
+      html.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'dark');
+      themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    } else {
+      html.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+      themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+    }
+  });
+
   DOM.navToggle.addEventListener('click', () => {
     DOM.navToggle.classList.toggle('active');
     DOM.navLinksContainer.classList.toggle('open');
